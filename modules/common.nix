@@ -27,11 +27,11 @@
     loader = {
       systemd-boot = {
         enable = true;
-        edit = false;
+        editor = false;
       };
     };
 
-    kernelPackages = pkgs.master.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_latest;
     supportedFilesystems = [ "btrfs" ];
   };
 
@@ -51,12 +51,10 @@
         enable = true;
       };
     };
+    
+    firewall.enable = false;    
 
     nftables = {
-      enable = true;
-    };
-
-    firewall = {
       enable = true;
     };
 

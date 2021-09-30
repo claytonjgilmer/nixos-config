@@ -12,5 +12,5 @@
     python39
     # Rust stuff
     rustup
-  ]
+  ];
 }
