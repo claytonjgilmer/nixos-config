@@ -39,7 +39,7 @@
       {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
-        home-manager.users.pimeys = lib.mkMerge [
+        home-manager.users.claytonjgilmer = lib.mkMerge [
           ./home.nix
         ];
       }
