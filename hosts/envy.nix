@@ -29,7 +29,7 @@
   
   powerManagement = {
     enable = true;
-    cpuFreqGovernor = "shedutil";
+    cpuFreqGovernor = "schedutil";
   };
 
   networking = {
