@@ -29,6 +29,9 @@ rec {
         theme = "af-magic";
         plugins = [ "git" ];
       };
+      shellAliases = {
+        "sudo" = "doas";
+      };
     };
   };
 }

@@ -42,8 +42,11 @@
       enable = true;
     };
 
+    sudo.enable = false;
+
     doas = {
       enable = true;
+      wheelNeedsPassword = false;
     };
   };
 
