@@ -11,6 +11,8 @@
     extraOptions = "experimental-features = nix-command flakes";
   };
 
+  nixpkgs.config.allowUnfree = true;
+
   users.users.claytonjgilmer = {
     description = "me";
     isNormalUser = true;
@@ -52,11 +54,7 @@
       };
     };
     
-    firewall.enable = false;    
-
-    nftables = {
-      enable = true;
-    };
+    firewall.enable = true;    
 
     networkmanager = {
       enable = true;

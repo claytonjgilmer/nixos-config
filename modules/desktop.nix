@@ -2,6 +2,7 @@
 
 {
   services.xserver = {
+    enable = true;
     desktopManager = {
       gnome = {
         enable = true;
@@ -16,10 +17,10 @@
   };
 
   environment.systemPackages = with pkgs; [
-    gnome-keyring
-    gnome-terminal
-    gnome-tweaks
-    nautilus
+    gnome.gnome-keyring
+    gnome.gnome-terminal
+    gnome.gnome-tweaks
+    gnome.nautilus
     firefox
     discord
   ];

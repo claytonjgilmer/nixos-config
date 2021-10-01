@@ -13,7 +13,7 @@
 
   environment.systemPackages = with pkgs; [
     qemu
-    gnome-boxes
+    gnome.gnome-boxes
     virt-manager
   ];
 }
