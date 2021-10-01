@@ -26,6 +26,11 @@
       "kvm-intel"
     ];
   };
+  
+  powerManagement = {
+    enable = true;
+    cpuFreqGovernor = "shedutil";
+  };
 
   networking = {
     hostName = "envy";
